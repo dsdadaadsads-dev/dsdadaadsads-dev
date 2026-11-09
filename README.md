@@ -11,3 +11,9 @@ My existing Upwork CSV Validation Audit covers up to two compatible UTF-8 CSV fi
 [See the existing package, terms and work sample on Upwork](https://www.upwork.com/services/product/development-it-a-professional-csv-export-report-with-duplicate-id-and-format-checks-2119040538064915396)
 
 Please use the Upwork project workflow for any inquiry or purchase. Do not put private customer files, credentials or financial information in GitHub issues.
+
+## Product export comparison - separate synthetic capability sample
+
+[View an original product-export comparison demonstration](samples/product-export-comparison-v46/README.md): changed prices/stock, missing keys, duplicate ambiguity and invalid values, with synthetic inputs and source hashes. AI-assisted; no customer data, store connection or customer-result claims.
+
+This comparison is separate from the existing $49 structural CSV audit and is not included in that package. Any custom work requires separate scope, privacy, timeline and price qualification through the appropriate marketplace workflow.

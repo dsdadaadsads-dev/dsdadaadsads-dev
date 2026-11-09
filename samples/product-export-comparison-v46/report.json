@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "scope": "NORMALIZED_EXPORT_COMPARISON_REPORT_ONLY",
+  "sources": [
+    {
+      "name": "before.csv",
+      "sha256": "d40121fb968998b9450bcc179ec3017dd39b1787b6122db9931a5e9da89dc3c8",
+      "bytes": 163,
+      "records": 7
+    },
+    {
+      "name": "after.csv",
+      "sha256": "f9420df80dd8dce9165767d6454dba42bae42988e89ec9ca5de34c3273402ef4",
+      "bytes": 142,
+      "records": 6
+    }
+  ],
+  "distinct_skus": 7,
+  "unchanged": 1,
+  "review_items": 6,
+  "flag_counts": {
+    "PRICE_CHANGED": 1,
+    "STOCK_CHANGED": 1,
+    "INVALID_VALUE": 1,
+    "DUPLICATE_SKU": 1,
+    "CURRENCY_CHANGED": 1,
+    "ADDED": 1,
+    "REMOVED": 1
+  },
+  "findings": [
+    {
+      "sku": "SKU-A",
+      "before_records": [
+        2
+      ],
+      "after_records": [
+        2
+      ],
+      "flags": [
+        "PRICE_CHANGED",
+        "STOCK_CHANGED"
+      ],
+      "before": {
+        "sku": "SKU-A",
+        "price": "12.00",
+        "currency": "USD",
+        "stock": "10"
+      },
+      "after": {
+        "sku": "SKU-A",
+        "price": "13.50",
+        "currency": "USD",
+        "stock": "8"
+      },
+      "price_delta": "1.50",
+      "stock_delta": -2
+    },
+    {
+      "sku": "SKU-BAD",
+      "before_records": [
+        8
+      ],
+      "after_records": [
+        6
+      ],
+      "flags": [
+        "INVALID_VALUE"
+      ],
+      "before": [
+        {
+          "record": 8,
+          "raw": {
+            "sku": "SKU-BAD",
+            "price": "7.00",
+            "currency": "USD",
+            "stock": "3"
+          },
+          "valid": true
+        }
+      ],
+      "after": [
+        {
+          "record": 6,
+          "raw": {
+            "sku": "SKU-BAD",
+            "price": "NaN",
+            "currency": "USD",
+            "stock": "3"
+          },
+          "valid": false
+        }
+      ]
+    },
+    {
+      "sku": "SKU-DUP",
+      "before_records": [
+        5,
+        6
+      ],
+      "after_records": [
+        4
+      ],
+      "flags": [
+        "DUPLICATE_SKU"
+      ],
+      "before": [
+        {
+          "record": 5,
+          "raw": {
+            "sku": "SKU-DUP",
+            "price": "5.00",
+            "currency": "USD",
+            "stock": "1"
+          },
+          "valid": true
+        },
+        {
+          "record": 6,
+          "raw": {
+            "sku": "SKU-DUP",
+            "price": "6.00",
+            "currency": "USD",
+            "stock": "1"
+          },
+          "valid": true
+        }
+      ],
+      "after": [
+        {
+          "record": 4,
+          "raw": {
+            "sku": "SKU-DUP",
+            "price": "7.00",
+            "currency": "USD",
+            "stock": "1"
+          },
+          "valid": true
+        }
+      ]
+    },
+    {
+      "sku": "SKU-FX",
+      "before_records": [
+        7
+      ],
+      "after_records": [
+        5
+      ],
+      "flags": [
+        "CURRENCY_CHANGED"
+      ],
+      "before": {
+        "sku": "SKU-FX",
+        "price": "8.00",
+        "currency": "USD",
+        "stock": "5"
+      },
+      "after": {
+        "sku": "SKU-FX",
+        "price": "9.00",
+        "currency": "EUR",
+        "stock": "5"
+      },
+      "price_delta": null,
+      "stock_delta": 0
+    },
+    {
+      "sku": "SKU-NEW",
+      "before_records": [],
+      "after_records": [
+        7
+      ],
+      "flags": [
+        "ADDED"
+      ],
+      "before": null,
+      "after": {
+        "sku": "SKU-NEW",
+        "price": "11.00",
+        "currency": "USD",
+        "stock": "4"
+      }
+    },
+    {
+      "sku": "SKU-OLD",
+      "before_records": [
+        4
+      ],
+      "after_records": [],
+      "flags": [
+        "REMOVED"
+      ],
+      "before": {
+        "sku": "SKU-OLD",
+        "price": "3.00",
+        "currency": "USD",
+        "stock": "2"
+      },
+      "after": null
+    }
+  ],
+  "demonstration": "SYNTHETIC ORIGINAL DATA - NOT A CUSTOMER DELIVERY"
+}

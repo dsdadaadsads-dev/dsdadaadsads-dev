@@ -1,0 +1,7 @@
+sku,price,currency,stock
+SKU-A,13.50,USD,8
+SKU-B,5.00,USD,4
+SKU-DUP,7.00,USD,1
+SKU-FX,9.00,EUR,5
+SKU-BAD,NaN,USD,3
+SKU-NEW,11.00,USD,4
