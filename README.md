@@ -25,3 +25,5 @@ Review how an incoming ZIP compares with an existing project folder before repla
 Requires Python 3.11+; Windows-tested. It does **not** extract, replace, back up or malware-scan files. The product was developed with AI assistance; no paid customer outcomes are claimed.
 
 [View ZIP Update Review on Gumroad — $9 one-time](https://thepro2487.gumroad.com/l/pxvduy)
+
+[See the synthetic report preview](zip-update-review/SAMPLE.md) · [Read the sample JSON](zip-update-review/sample-report.json).

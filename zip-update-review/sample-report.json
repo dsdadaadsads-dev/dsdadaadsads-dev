@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "product": "ZIP Update Review",
+  "version": "1.0.0",
+  "archive_name": "incoming-update.zip",
+  "target_name": "existing-project",
+  "complete": false,
+  "counts": {
+    "NEW": 1,
+    "CHANGED": 1,
+    "IDENTICAL": 1,
+    "DIRECTORY": 0,
+    "CONFLICT": 2,
+    "UNCHECKED": 0
+  },
+  "entries": [
+    {
+      "path": "readme.txt",
+      "status": "IDENTICAL",
+      "archive_bytes": 13,
+      "archive_sha256": "6d7b476933fd89a95ba724046b16928a5f824af229a5bf387be2a79c1b3e4f67",
+      "target_sha256": "6d7b476933fd89a95ba724046b16928a5f824af229a5bf387be2a79c1b3e4f67",
+      "reasons": []
+    },
+    {
+      "path": "settings.json",
+      "status": "CHANGED",
+      "archive_bytes": 17,
+      "archive_sha256": "057c817c6a65ba4c95e68d754eaf8323b5714e95d5ecb624049f5afe95e47ba4",
+      "target_sha256": "476e05ec043009a32a0f624e6b1976be52c3ed3c594c286d81fe259de5bda701",
+      "reasons": []
+    },
+    {
+      "path": "assets/new-icon.txt",
+      "status": "NEW",
+      "archive_bytes": 31,
+      "archive_sha256": "001966772754e32ab1d2082fc138b7229ef8be4bae628c67ef8180b9179af838",
+      "target_sha256": null,
+      "reasons": []
+    },
+    {
+      "path": "CON.txt",
+      "status": "CONFLICT",
+      "archive_bytes": 21,
+      "archive_sha256": null,
+      "target_sha256": null,
+      "reasons": [
+        "Windows reserved device name; rename before delivery."
+      ]
+    },
+    {
+      "path": "../outside.txt",
+      "status": "CONFLICT",
+      "archive_bytes": 20,
+      "archive_sha256": null,
+      "target_sha256": null,
+      "reasons": [
+        "Unsafe or ambiguous archive path; rename at the source.",
+        "Name is not portable to Windows; rename before delivery."
+      ]
+    }
+  ],
+  "limitations": [
+    "Read-only preview; no files extracted, replaced, renamed or deleted.",
+    "A complete comparison is not a guarantee that extraction will succeed or that files are safe.",
+    "Checks are conservative; case/Unicode grouping is not an exact Windows filesystem emulator.",
+    "Use a stable snapshot. Concurrent folder changes are not transactionally isolated.",
+    "Only ZIP destinations are compared; other target files are not proposed for deletion.",
+    "Reports contain filenames; review before sharing. No file content is included."
+  ]
+}
