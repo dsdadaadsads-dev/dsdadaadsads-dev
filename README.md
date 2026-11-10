@@ -17,3 +17,11 @@ Please use the Upwork project workflow for any inquiry or purchase. Do not put p
 [View an original product-export comparison demonstration](samples/product-export-comparison-v46/README.md): changed prices/stock, missing keys, duplicate ambiguity and invalid values, with synthetic inputs and source hashes. AI-assisted; no customer data, store connection or customer-result claims.
 
 This comparison is separate from the existing $49 structural CSV audit and is not included in that package. Any custom work requires separate scope, privacy, timeline and price qualification through the appropriate marketplace workflow.
+
+## ZIP Update Review — offline developer utility ($9)
+
+Review how an incoming ZIP compares with an existing project folder before replacing files. This original, read-only Python command-line tool reports new, changed, identical and conflicting destinations, with HTML and JSON reports. The download includes source, usage instructions, tests, an MIT license and a synthetic sample report.
+
+Requires Python 3.11+; Windows-tested. It does **not** extract, replace, back up or malware-scan files. The product was developed with AI assistance; no paid customer outcomes are claimed.
+
+[View ZIP Update Review on Gumroad — $9 one-time](https://thepro2487.gumroad.com/l/pxvduy)
