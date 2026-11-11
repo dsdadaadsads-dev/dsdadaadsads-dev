@@ -27,3 +27,11 @@ Requires Python 3.11+; Windows-tested. It does **not** extract, replace, back up
 [View ZIP Update Review on Gumroad — $9 one-time](https://thepro2487.gumroad.com/l/pxvduy)
 
 [See the synthetic report preview](zip-update-review/SAMPLE.md) · [Read the sample JSON](zip-update-review/sample-report.json).
+
+### Questions before buying the ZIP tool?
+
+[Ask a public ZIP Update Review compatibility question](https://github.com/dsdadaadsads-dev/dsdadaadsads-dev/issues/new?title=ZIP%20Update%20Review%20compatibility%20question&body=Public%20ZIP%20tool%20question%20only.%20Do%20not%20attach%20archives%2C%20reports%2C%20project%20source%2C%20local%20paths%2C%20personal%20data%2C%20order%2Fpayment%20details%20or%20credentials.%0A%0AOperating%20system%20%28generic%20version%29%3A%0APython%20version%20%28if%20known%29%3A%0AArchive%20format%2Fcompression%20%28if%20known%29%3A%0AWhat%20would%20you%20like%20to%20check%20before%20buying%3F%0A). A GitHub account is required. You can describe your operating system, Python version and archive format without sharing project files.
+
+This board is public. Do not upload archives, reports, project source, local paths, personal data, order/payment details or credentials. For an existing Gumroad order or refund, use the support options in your purchase receipt. CSV and Roblox service inquiries belong in their Upwork project workflows.
+
+Questions do not include custom integration, a live support service or a guaranteed response time. The tool's documented compatibility and limits still apply.
